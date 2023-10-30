@@ -20,14 +20,14 @@ export const appSessionStorage = createStorage(getSessionStorage(), {
     schema: string().nullable(), // Schema based on which the type is inferred 
   } as const, // By specifying "as const", the literal type is correctly inferred
   hoge: {
-    key: 'hoge-key', 
+    key: 'hoge-key',
     defaultValue: {
       bar: 10
-    },				
+    },
     schema: object({
       bar:number()
-    }),	
-  } as const,						
+    }),
+  } as const,
 })
 
 appSessionStorage.foo.get() // string | null
