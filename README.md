@@ -2,7 +2,7 @@
 
 Type safe [Web Storage API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API) wrapper by zod
 
-CodeSandBox:
+CodeSandbox:
 https://codesandbox.io/p/github/koushisa/type-safe-storage
 
 ## usage
@@ -38,5 +38,5 @@ appSessionStorage.hoge.get()
 appSessionStorage.hoge.set({bar:15})
 appSessionStorage.hoge.key
 
-console.log(appSessionStorage.foo.key)
+console.log(appSessionStorage.foo.get())
 ```
